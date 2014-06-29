@@ -1,0 +1,22 @@
+<%= form_for @room do |f| %>
+  <p>
+    <%= f.label :Room_type %>
+    <%= f.text_field :Room_type %>
+  </p>
+  <p>
+    <%= f.label :Usage %>
+    <%= f.text_field :Usage %>
+  </p>
+  <p>
+    <%= f.submit 'Create room' %>
+  </p>
+<% end %>
+
+<% @rooms.each do |room| %>
+  <ul>
+    <li>
+      <%= room.Room_type %><br>
+      <%= room.Usage %>
+    </li>
+  </ul>
+<% end %>
