@@ -8,15 +8,6 @@
     <%= f.text_field :Usage %>
   </p>
   <p>
-    <%= f.submit 'Create room' %>
+    <%= f.submit 'Update' %>
   </p>
-<% end %>
-
-<% @rooms.each do |room| %>
-  <ul>
-    <li>
-      <%= link_to "#{room.Room_type}", room_path(room) %><br>
-      <%= room.Usage %>
-    </li>
-  </ul>
 <% end %>
